@@ -1,5 +1,6 @@
 html, body{
   height: 100%;
+  width: 100%;
 }
 body{
   background-color: #292b2c;
@@ -34,7 +35,7 @@ main{
   border-radius: 5px;
   width: 15%;
 }
-.card{
+.card-authors{
   float: left;
   margin: 0 5% 2% 0;
   width: 15rem;
@@ -43,10 +44,11 @@ main{
   background-color: transparent;
   border: 1px solid white;
 }
-
-.card img:nth-child(1){
+.card-authors .img{
+  width: 100%;
   height: 40%;
 }
+
 .pos{
   position: absolute;
   width: 50px;
@@ -79,7 +81,7 @@ table{
   margin: 2% 2% 2% 4%;
 }
 .op{
-  border: 1px solid white;
+  border: none;
   border-radius: 5px;
   min-height: 90%;
   height: 97%;
@@ -96,9 +98,45 @@ table{
 .carousel-item img{
   border-radius: 5px;
 }
+.card-film{
+  margin: 1%;
+  background-color: transparent;
+  border-color: white;
+  width: 30%;
+}
+.card-film img{
+  margin: 20% 0 0 20%;
+  width: 100%;
+}
+.card-film .card-title{
+  font-size: 100%;
+}
+.card-film .card-text{
+  font-size: 80%;
+}
+.card-film a{
+  font-size: 70%;
+  margin-bottom: 4%;
+  margin-right: 4%;
+}
 footer{
   width: 100%;
   text-align: center;
   background-color: #0F2016;
   padding-bottom: 5%;
+}
+@media (max-width: 992px) {
+   .full {
+      width: 100%;
+      margin: 0 2% 0 2%;
+   }
+   .recommend-block img{
+     width: 100%;
+   }
+   .card-film{
+     margin: 2% 7% 2% 7%;
+     background-color: transparent;
+     border-color: white;
+     width: 100%;
+   }
 }
